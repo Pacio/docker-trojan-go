@@ -24,7 +24,7 @@ services:
   acme2:
     container_name: acme2
     image: neilpang/acme.sh
-    command: --issue -d your_site --dns dns_cf
+    command: --issue -d your_site --standalone
     environment:
        CF_Email: your_email
        CF_Key: your_key
